@@ -56,6 +56,35 @@ main {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
+.botonera-home {
+  background-color: #353434;
+  padding: 20px;
+  padding-bottom: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  max-width: none;
+}
+.botonera-home .ul-botonera-home {
+  list-style: none;
+  padding-left: 0;
+}
+.botonera-home .ul-botonera-home a:hover {
+  transform: scale(1.2);
+}
+
+.ul-botonera-home a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.ul-botonera-home img {
+  width: 65px;
+}
+
 .mapa-home {
   background-color: #F07F2A;
   text-align: center;
