@@ -1,3 +1,141 @@
-nav {
-  color: red;
+/* RESETEO UNIVERSAL */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*H1*/
+/*H2*/
+/*P*/
+/*LINKS NAV*/
+/*TITLE CARD*/
+/*BUTTON*/
+/*FOOTER-TOP*/
+.navbar {
+  background-color: #BF5A0D;
+  display: flex;
+  justify-content: space-between;
+  top: 0%;
+  left: 0%;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.navbar .navbar-nav {
+  margin-left: auto;
+}
+.navbar .navbar-nav .nav-item {
+  padding: 5px;
+  color: #B8CBCC;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+}
+.navbar .navbar-nav .nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #778080;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.navbar .navbar-nav .nav-item:hover {
+  color: #B8CBCC;
+}
+
+main {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.mapa-home {
+  background-color: #F07F2A;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 0px 0px;
+  max-width: 100%;
+}
+.mapa-home h4 {
+  text-shadow: none;
+}
+.mapa-home iframe {
+  width: 100%;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top .contacto-footer-top li {
+  list-style: none;
+  text-align: justify;
+  font-size: 12px;
+}
+.footer-top .fa-instagram {
+  font-size: 30px;
+  color: #e4405f;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  line-height: 1.7;
+}
+.footer-top .fa-instagram:hover {
+  background-color: #e4405f;
+  color: white;
+}
+.footer-top .footer-top-p {
+  font-size: 12px;
+}
+
+footer {
+  background-color: #BF5A0D;
+  color: #B8CBCC;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+}
+footer .redes a {
+  color: #B8CBCC;
+  text-decoration: none;
+  font-size: 20px;
+  align-items: baseline;
+}
+footer .redes i:hover {
+  transform: scale(1.15);
+}
+footer .invisible {
+  visibility: hidden;
+}
+
+/*BOTON WHATSAPP*/
+.whatsapp {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(76, 200, 90, 0.6);
+  color: black;
+  text-decoration: none;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp:hover {
+  background-color: #128c7e;
 }/*# sourceMappingURL=styles.css.map */

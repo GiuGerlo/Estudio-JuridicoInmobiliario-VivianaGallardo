@@ -1,3 +1,188 @@
-nav{
-    color: red
+/* RESETEO UNIVERSAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// COLORES
+$color1: #353434;
+$color2: #778080;
+$color3: #B8CBCC;
+$color4: #BF5A0D;
+$color5: #F07F2A;
+
+//TAMAÑOS DE FUENTES//
+/*H1*/
+$fsizeh1: 45px;
+$fsizeh1-md: 70px;
+/*H2*/
+$fsizeh2: 30px;
+$fsizeh2-md: 40px;
+/*P*/
+$fsizep: 18px;
+$fsizep-md: 22px;
+/*LINKS NAV*/
+$fsizenav: 20px;
+$fsizenav-md: 22px;
+/*TITLE CARD*/
+$fsizecard: 22px;
+$fsizecard-md: 28px;
+/*BUTTON*/
+$fsizebtn:22px;
+/*FOOTER-TOP*/
+$ffootertop: 12px;
+$ffootertop-md: 14px;
+
+//FUENTES
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+$font1: "Kanit", sans-serif; //PARRAFO
+$font2: "Merriweather", serif; //
+$font3: "Rubik", sans-serif; //HEADER Y FOOTER
+
+//HEADER
+.navbar {
+    background-color: $color4;
+    display: flex;
+    justify-content: space-between;
+    top: 0%;
+    left: 0%;
+    padding: 5px;
+    font-weight: bold;
+    font-size: $fsizenav;
+
+    .navbar-nav {
+        margin-left: auto;
+
+        .nav-item {
+            padding: 5px;
+            color: $color3;
+            font-family: $font3;
+            position: relative; 
+
+            // Efecto hover
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $color2;
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+
+            &:hover {
+                color: $color3;
+            }
+        }
+    }
+}
+
+//MAIN
+main{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+//ENCONTRANOS
+.mapa-home{
+    background-color: $color5;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0 0px 0px;
+    max-width: 100%;
+        h4{
+            text-shadow: none;
+        }
+        iframe{
+            width: 100%;
+        }
+}
+//FOOTER TOP
+.footer-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        .contacto-footer-top li{
+            list-style: none;
+            text-align: justify;
+            font-size: $ffootertop;
+        }
+
+        .fa-instagram {
+            font-size: 30px;
+            color: #e4405f; 
+            height: 50px; 
+            width: 50px; 
+            border-radius: 50%;
+            background-color: #f8f8f8;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease; 
+            line-height: 1.7;
+        }
+
+            .fa-instagram:hover {
+                background-color: #e4405f; 
+                color: white;
+            }
+        
+        .footer-top-p{
+            font-size: $ffootertop;
+        }
+
+}
+
+//FOOTER
+footer{
+    background-color: $color4;
+    color: $color3;
+    font-family: $font3;
+    font-size: $ffootertop-md;
+
+        .redes a {
+            color: $color3;
+            text-decoration: none;
+            font-size: 20px ;
+            align-items: baseline;
+        }
+
+        .redes i:hover{
+            transform: scale(1.15);
+        }
+
+        .invisible{
+            visibility: hidden;
+        }
+}
+
+/*BOTON WHATSAPP*/
+
+.whatsapp {
+    height: 50px; 
+    width: 50px; 
+    background-color: #4cc85a99; 
+    color: black; 
+    text-decoration: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    text-align: center;
+    font-size: 30px; 
+    line-height: 50px; 
+    border-radius: 50%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease; 
+}
+
+.whatsapp:hover {
+    background-color: #128c7e; 
 }
