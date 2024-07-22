@@ -38,7 +38,7 @@ $ffootertop-md: 18px;
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 $font1: "Kanit", sans-serif; //PARRAFO
-$font2: "Merriweather", serif; //
+$font2: "Merriweather", serif; //FOOTERTOP
 $font3: "Rubik", sans-serif; //HEADER Y FOOTER
 
 //HEADER
@@ -94,6 +94,24 @@ $font3: "Rubik", sans-serif; //HEADER Y FOOTER
 //MAIN
 main{
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
+        h1{
+            font-size: $fsizeh1;
+            font-family: $font2;
+            text-transform: uppercase;
+        }
+        p, li, a{
+            font-size: $fsizep;
+            font-family: $font1;
+        }
+        h2, h4{
+            font-size: $fsizeh2;
+            font-family: $font2;
+        }
+        h3{
+            font-size: $fsizecard;
+            font-family: $font2;
+        }
 }
 
 //BOTONERA
@@ -105,6 +123,7 @@ main{
     margin-left: 0px;
     width: 100%;
     max-width: none;
+    overflow: hidden;
 
     .ul-botonera-home{
         list-style: none;
@@ -153,6 +172,7 @@ main{
             list-style: none;
             text-align: justify;
             font-size: $ffootertop;
+            font-family: $font2;
         }
 
         .fa-instagram {
@@ -174,6 +194,7 @@ main{
         
         .footer-top-p{
             font-size: $ffootertop;
+            font-family: $font2;
         }
 
 }
@@ -181,12 +202,12 @@ main{
 //FOOTER
 footer{
     background-color: $color4;
-    color: $color3;
+    color: $color1;
     font-family: $font3;
     font-size: $ffootertop-md;
 
         .redes a {
-            color: $color3;
+            color: $color1;
             text-decoration: none;
             font-size: 20px ;
             align-items: baseline;

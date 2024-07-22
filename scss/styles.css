@@ -57,6 +57,23 @@
 main {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
+main h1 {
+  font-size: 45px;
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+}
+main p, main li, main a {
+  font-size: 18px;
+  font-family: "Kanit", sans-serif;
+}
+main h2, main h4 {
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+}
+main h3 {
+  font-size: 22px;
+  font-family: "Merriweather", serif;
+}
 
 .botonera-home {
   background-color: #353434;
@@ -66,6 +83,7 @@ main {
   margin-left: 0px;
   width: 100%;
   max-width: none;
+  overflow: hidden;
 }
 .botonera-home .ul-botonera-home {
   list-style: none;
@@ -110,6 +128,7 @@ main {
   list-style: none;
   text-align: justify;
   font-size: 14px;
+  font-family: "Merriweather", serif;
 }
 .footer-top .fa-instagram {
   font-size: 30px;
@@ -128,16 +147,17 @@ main {
 }
 .footer-top .footer-top-p {
   font-size: 14px;
+  font-family: "Merriweather", serif;
 }
 
 footer {
   background-color: #BF5A0D;
-  color: #B8CBCC;
+  color: #353434;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
 }
 footer .redes a {
-  color: #B8CBCC;
+  color: #353434;
   text-decoration: none;
   font-size: 20px;
   align-items: baseline;
