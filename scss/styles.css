@@ -21,16 +21,21 @@
   left: 0%;
   padding: 5px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
 }
 .navbar .navbar-nav {
   margin-left: auto;
 }
 .navbar .navbar-nav .nav-item {
   padding: 5px;
-  color: #B8CBCC;
   font-family: "Rubik", sans-serif;
   position: relative;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #353434;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #1b1b1b;
 }
 .navbar .navbar-nav .nav-item::after {
   content: "";
@@ -47,9 +52,6 @@
 .navbar .navbar-nav .nav-item:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-.navbar .navbar-nav .nav-item:hover {
-  color: #B8CBCC;
 }
 
 main {
@@ -107,7 +109,7 @@ main {
 .footer-top .contacto-footer-top li {
   list-style: none;
   text-align: justify;
-  font-size: 12px;
+  font-size: 14px;
 }
 .footer-top .fa-instagram {
   font-size: 30px;
@@ -125,14 +127,14 @@ main {
   color: white;
 }
 .footer-top .footer-top-p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 footer {
   background-color: #BF5A0D;
   color: #B8CBCC;
   font-family: "Rubik", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
 }
 footer .redes a {
   color: #B8CBCC;
@@ -156,7 +158,7 @@ footer .invisible {
   text-decoration: none;
   position: fixed;
   right: 15px;
-  bottom: 15px;
+  bottom: 25px;
   text-align: center;
   font-size: 30px;
   line-height: 50px;

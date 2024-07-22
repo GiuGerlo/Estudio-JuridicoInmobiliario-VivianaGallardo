@@ -23,16 +23,16 @@ $fsizeh2-md: 40px;
 $fsizep: 18px;
 $fsizep-md: 22px;
 /*LINKS NAV*/
-$fsizenav: 20px;
-$fsizenav-md: 22px;
+$fsizenav: 22px;
+$fsizenav-md: 24px;
 /*TITLE CARD*/
 $fsizecard: 22px;
 $fsizecard-md: 28px;
 /*BUTTON*/
 $fsizebtn:22px;
 /*FOOTER-TOP*/
-$ffootertop: 12px;
-$ffootertop-md: 14px;
+$ffootertop: 14px;
+$ffootertop-md: 18px;
 
 //FUENTES
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
@@ -57,9 +57,16 @@ $font3: "Rubik", sans-serif; //HEADER Y FOOTER
 
         .nav-item {
             padding: 5px;
-            color: $color3;
             font-family: $font3;
             position: relative; 
+
+            .nav-link {
+                color: $color1; 
+                
+                &:hover {
+                    color: darken($color1, 10%); 
+                }
+            }
 
             // Efecto hover
             &::after {
@@ -79,13 +86,10 @@ $font3: "Rubik", sans-serif; //HEADER Y FOOTER
                 transform: scaleX(1);
                 transform-origin: bottom left;
             }
-
-            &:hover {
-                color: $color3;
-            }
         }
     }
 }
+
 
 //MAIN
 main{
@@ -207,7 +211,7 @@ footer{
     text-decoration: none;
     position: fixed;
     right: 15px;
-    bottom: 15px;
+    bottom: 25px;
     text-align: center;
     font-size: 30px; 
     line-height: 50px; 
