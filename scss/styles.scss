@@ -122,6 +122,10 @@ main{
             font-size: $fsizeh1;
         }
 
+        button:hover{
+            transform: scale(1.2);
+        }
+
         .btn-cta-home{
             background-color: $color1;
             color: $color3;

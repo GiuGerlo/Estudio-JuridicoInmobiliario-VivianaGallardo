@@ -83,6 +83,9 @@ main h3 {
 .cta-home h1 {
   font-size: 45px;
 }
+.cta-home button:hover {
+  transform: scale(1.2);
+}
 .cta-home .btn-cta-home {
   background-color: #353434;
   color: #B8CBCC;
