@@ -75,6 +75,39 @@ main h3 {
   font-family: "Merriweather", serif;
 }
 
+/*CALL TO ACTION*/
+.cta-home {
+  background-color: #F07F2A;
+  font-family: "Merriweather", serif;
+}
+.cta-home h1 {
+  font-size: 45px;
+}
+.cta-home .btn-cta-home {
+  background-color: #353434;
+  color: #B8CBCC;
+}
+.cta-home .btn-cta-home a {
+  text-decoration: none;
+  color: #B8CBCC;
+  font-size: 22px;
+}
+
+.cta-home-2 {
+  background-color: #BF5A0D;
+  font-family: "Kanit", sans-serif;
+  color: #B8CBCC;
+}
+.cta-home-2 .presentacion {
+  text-align: justify;
+  font-weight: 500;
+}
+.cta-home-2 .presentacion span {
+  font-weight: 800;
+  font-style: italic;
+  color: #353434;
+}
+
 .botonera-home {
   background-color: #353434;
   padding: 20px;

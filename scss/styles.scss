@@ -114,6 +114,42 @@ main{
         }
 }
 
+/*CALL TO ACTION*/
+.cta-home{
+    background-color: $color5;
+    font-family: $font2;
+        h1{
+            font-size: $fsizeh1;
+        }
+
+        .btn-cta-home{
+            background-color: $color1;
+            color: $color3;
+                a{
+                    text-decoration: none;
+                    color: $color3;
+                    font-size: 22px;
+                }
+        }
+}
+
+.cta-home-2{
+    background-color: $color4;
+    font-family: $font1;
+    color: $color3;
+
+        .presentacion{
+            text-align: justify;
+            font-weight: 500;
+
+                span{
+                    font-weight: 800;
+                    font-style: italic;
+                    color: $color1;
+                }
+        }
+}
+
 //BOTONERA
 .botonera-home{
     background-color: $color1;
