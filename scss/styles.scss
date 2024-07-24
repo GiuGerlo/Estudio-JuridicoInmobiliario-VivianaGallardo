@@ -1,11 +1,11 @@
 /* RESETEO UNIVERSAL */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html, body {
     overflow-x: hidden;
 }
 
@@ -16,36 +16,36 @@ $color3: #B8CBCC;
 $color4: #BF5A0D;
 $color5: #F07F2A;
 
-//TAMAÑOS DE FUENTES//
-/*H1*/
+// TAMAÑOS DE FUENTES
+/* H1 */
 $fsizeh1: 45px;
 $fsizeh1-md: 70px;
-/*H2*/
+/* H2 */
 $fsizeh2: 30px;
 $fsizeh2-md: 40px;
-/*P*/
+/* P */
 $fsizep: 18px;
 $fsizep-md: 22px;
-/*LINKS NAV*/
+/* LINKS NAV */
 $fsizenav: 22px;
 $fsizenav-md: 24px;
-/*TITLE CARD*/
+/* TITLE CARD */
 $fsizecard: 22px;
 $fsizecard-md: 28px;
-/*BUTTON*/
-$fsizebtn:22px;
-/*FOOTER-TOP*/
+/* BUTTON */
+$fsizebtn: 22px;
+/* FOOTER-TOP */
 $ffootertop: 14px;
 $ffootertop-md: 18px;
 
-//FUENTES
+// FUENTES
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-$font1: "Kanit", sans-serif; //PARRAFO
-$font2: "Merriweather", serif; //FOOTERTOP
-$font3: "Rubik", sans-serif; //HEADER Y FOOTER
+$font1: "Kanit", sans-serif; // PARRAFO
+$font2: "Merriweather", serif; // FOOTERTOP
+$font3: "Rubik", sans-serif; // HEADER Y FOOTER
 
-//HEADER
+// HEADER
 .navbar {
     background-color: $color4;
     display: flex;
@@ -62,37 +62,68 @@ $font3: "Rubik", sans-serif; //HEADER Y FOOTER
         .nav-item {
             padding: 5px;
             font-family: $font3;
-            position: relative; 
+            position: relative;
 
             .nav-link {
-                color: $color1; 
-                
-                &:hover {
-                    color: darken($color1, 10%); 
+                position: relative;
+                display: block;
+                text-transform: uppercase;
+                margin: 20px 0;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: $color1;
+                font-family: sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                transition: .5s;
+                z-index: 1;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-top: 2px solid $color1;
+                    border-bottom: 2px solid $color1;
+                    transform: scaleY(2);
+                    opacity: 0;
+                    transition: .3s;
                 }
-            }
 
-            // Efecto hover
-            &::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 2px;
-                background-color: $color2;
-                transform: scaleX(0);
-                transform-origin: bottom right;
-                transition: transform 0.25s ease-out;
-            }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $color1;
+                    transform: scale(0);
+                    opacity: 0;
+                    transition: .3s;
+                    z-index: -1;
+                }
 
-            &:hover::after {
-                transform: scaleX(1);
-                transform-origin: bottom left;
+                &:hover {
+                    color: #fff;
+
+                    &:before {
+                        transform: scaleY(1);
+                        opacity: 1;
+                    }
+
+                    &:after {
+                        transform: scaleY(1);
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
 }
+
 
 
 //MAIN
@@ -201,7 +232,6 @@ main{
     padding: 20px 0 0px 0px;
     max-width: 100%;
         h4{
-            text-shadow: 7px -2px 0px rgba(0,0,0,0.36);
             font-weight: bold;
         }
         iframe{
@@ -293,44 +323,45 @@ footer{
 
 //ESTUDIO JURIDICO
 
-/* Servicios Jurídicos */
-.legal-services {
+.servicios {
     background-color: #f9f9f9;
     padding: 50px 0;
+
+    .titulo-seccion {
+        font-size: 2.5rem;
+        font-family: $font2;
+        color: $color1;
+    }
+
+    .subtitulo-seccion {
+        font-size: 1.25rem;
+        font-family: $font1;
+        color: $color2;
+    }
+
+    .card-servicios {
+        background-color: $color5;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        color: $color1;
+        font-family: $font1;
+
+        h3 {
+            font-size: $fsizeh2;
+            color: $color1;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: $fsizep;
+            color: $color3;
+            font-weight: 600;
+        }
+    }
 }
 
-.section-title {
-    font-size: 2.5rem;
-    font-family: $font2;
-    color: $color1;
-}
-
-.section-subtitle {
-    font-size: 1.25rem;
-    font-family: $font1;
-    color: $color2;
-}
-
-.service-card {
-    background-color: $color5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: $color1;
-    font-family: $font1;
-}
-
-.service-card h3 {
-    font-size: $fsizeh2;
-    color: $color1;
-    margin-bottom: 15px;
-}
-
-.service-card p {
-    font-size: $fsizep;
-    color: $color2;
-}
 
 
 //FORM
