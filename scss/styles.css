@@ -18,7 +18,7 @@ html, body {
 /* BUTTON */
 /* FOOTER-TOP */
 .navbar {
-  background-color: #BF5A0D;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   top: 0%;
@@ -88,10 +88,10 @@ html, body {
 }
 
 main {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background-color: whitesmoke;
 }
 main h1 {
-  font-size: 45px;
+  font-size: 40px;
   font-family: "Merriweather", serif;
   text-transform: uppercase;
 }
@@ -110,11 +110,11 @@ main h3 {
 
 /*CALL TO ACTION*/
 .cta-home {
-  background-color: #F07F2A;
+  background-color: #F28D40;
   font-family: "Merriweather", serif;
 }
 .cta-home h1 {
-  font-size: 45px;
+  font-size: 40px;
 }
 .cta-home button:hover {
   transform: scale(1.2);
@@ -131,9 +131,9 @@ main h3 {
 }
 
 .cta-home-2 {
-  background-color: #BF5A0D;
+  background-color: white;
   font-family: "Kanit", sans-serif;
-  color: #B8CBCC;
+  color: #778080;
 }
 .cta-home-2 .presentacion {
   text-align: justify;
@@ -176,7 +176,7 @@ main h3 {
 }
 
 .mapa-home {
-  background-color: #F07F2A;
+  background-color: #F28D40;
   text-align: center;
   width: 100%;
   padding: 20px 0 0px 0px;
@@ -221,7 +221,7 @@ main h3 {
 }
 
 footer {
-  background-color: #BF5A0D;
+  background-color: white;
   color: #353434;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -265,10 +265,16 @@ footer .invisible {
   background-color: #f9f9f9;
   padding: 50px 0;
 }
+.servicios .info-servicios {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 10px;
+}
 .servicios .titulo-seccion {
   font-size: 2.5rem;
-  font-family: "Merriweather", serif;
+  font-family: "Rubik", sans-serif;
   color: #353434;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .servicios .subtitulo-seccion {
   font-size: 1.25rem;
@@ -276,7 +282,7 @@ footer .invisible {
   color: #778080;
 }
 .servicios .card-servicios {
-  background-color: #F07F2A;
+  background-color: #F28D40;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -303,7 +309,7 @@ footer .invisible {
   justify-content: center;
 }
 .formulario form {
-  background-color: #F07F2A;
+  background-color: #F28D40;
   padding: 50px 55px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;

@@ -13,12 +13,12 @@ html, body {
 $color1: #353434;
 $color2: #778080;
 $color3: #B8CBCC;
-$color4: #BF5A0D;
-$color5: #F07F2A;
+$color4: white;
+$color5: #F28D40;
 
 // TAMAÑOS DE FUENTES
 /* H1 */
-$fsizeh1: 45px;
+$fsizeh1: 40px;
 $fsizeh1-md: 70px;
 /* H2 */
 $fsizeh2: 30px;
@@ -128,7 +128,7 @@ $font3: "Rubik", sans-serif; // HEADER Y FOOTER
 
 //MAIN
 main{
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-color: whitesmoke;
 
         h1{
             font-size: $fsizeh1;
@@ -176,7 +176,7 @@ main{
 .cta-home-2{
     background-color: $color4;
     font-family: $font1;
-    color: $color3;
+    color: $color2;
 
         .presentacion{
             text-align: justify;
@@ -327,10 +327,17 @@ footer{
     background-color: #f9f9f9;
     padding: 50px 0;
 
+    .info-servicios{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        padding: 10px;
+    }
+
     .titulo-seccion {
         font-size: 2.5rem;
-        font-family: $font2;
+        font-family: $font3;
         color: $color1;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     .subtitulo-seccion {
@@ -361,7 +368,6 @@ footer{
         }
     }
 }
-
 
 
 //FORM
