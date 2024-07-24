@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 // COLORES
 $color1: #353434;
 $color2: #778080;
@@ -129,6 +133,7 @@ main{
         .btn-cta-home{
             background-color: $color1;
             color: $color3;
+            cursor: pointer;
                 a{
                     text-decoration: none;
                     color: $color3;
@@ -284,4 +289,84 @@ footer{
 
 .whatsapp:hover {
     background-color: #128c7e; 
+}
+
+//FORM
+.formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+        form{
+            background-color: $color5;
+            padding: 50px 55px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            text-align: center;
+            width: 500px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+                .input-group{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    
+                        label{
+                            color: $color1;
+                            font-weight: 600;
+                            font-size: 18px;
+                            margin-bottom: 15px;
+                        }
+
+                        input, textarea{
+                            padding: 17 25px !important;
+                            border-radius: 8px !important;
+                            margin-bottom: 15px;
+                            border: 2px solid #F0FAF1;
+                            outline: none;
+                            color: $color1;
+                        }
+
+                        input::placeholder, textarea::placeholder{
+                            color: $color2;
+                        }
+
+                        .btn-form{
+                            font-size: 20px;
+                            color: $color3;
+                            border: 0;
+                            border-radius: 25px !important;
+                            background-color: $color1;
+                            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+                            cursor: pointer;
+                        }
+                }
+
+                h2{
+                    font-weight: bold;
+                    font-size: 35px;
+                    color: $color1;
+                }
+        }
+
+}
+
+@media(max-width:768px) {
+
+    .formulario{
+        padding: 30px;
+
+            form{
+                padding: 50px 30px;
+                width: 100%;
+
+                    input{
+                        padding: 15px;
+                    }
+            }
+    }
 }

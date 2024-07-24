@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /*H1*/
 /*H2*/
 /*P*/
@@ -89,6 +93,7 @@ main h3 {
 .cta-home .btn-cta-home {
   background-color: #353434;
   color: #B8CBCC;
+  cursor: pointer;
 }
 .cta-home .btn-cta-home a {
   text-decoration: none;
@@ -226,4 +231,74 @@ footer .invisible {
 
 .whatsapp:hover {
   background-color: #128c7e;
+}
+
+.formulario {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formulario form {
+  background-color: #F07F2A;
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.formulario form .input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.formulario form .input-group label {
+  color: #353434;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.formulario form .input-group input, .formulario form .input-group textarea {
+  padding: 17 25px !important;
+  border-radius: 8px !important;
+  margin-bottom: 15px;
+  border: 2px solid #F0FAF1;
+  outline: none;
+  color: #353434;
+}
+.formulario form .input-group input::-moz-placeholder, .formulario form .input-group textarea::-moz-placeholder {
+  color: #778080;
+}
+.formulario form .input-group input::placeholder, .formulario form .input-group textarea::placeholder {
+  color: #778080;
+}
+.formulario form .input-group .btn-form {
+  font-size: 20px;
+  color: #B8CBCC;
+  border: 0;
+  border-radius: 25px !important;
+  background-color: #353434;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.formulario form h2 {
+  font-weight: bold;
+  font-size: 35px;
+  color: #353434;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    padding: 30px;
+  }
+  .formulario form {
+    padding: 50px 30px;
+    width: 100%;
+  }
+  .formulario form input {
+    padding: 15px;
+  }
 }/*# sourceMappingURL=styles.css.map */

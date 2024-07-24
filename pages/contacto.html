@@ -45,8 +45,27 @@
         </nav>
     </header>
     <main>
-        <!-- MAIN -->
-        <h1>Contacto</h1>
+        <!-- FORMULARIO -->
+        <section class="formulario">
+            <form action="https://formsubmit.co/ggiuliano526@gmail.com" method="POST">
+                <h2>Formulario de Contacto</h2>
+                <div class="input-group">
+                    <label for="nombreyapellido">Nombre y Apellido</label>
+                    <input type="text" name="nombreyapellido" id="nombreyapellido" placeholder="Nombre y Apellido">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo" placeholder="Correo electrónico">
+                    <label for="localidad">Localidad</label>
+                    <input type="text" name="localidad" id="localidad" placeholder="Localidad">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>    
+                    <input class="btn-form" type="submit" value="Enviar">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/contacto.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+            </form>
+        </section>
         <!-- ENCONTRANOS -->
         <section class="mapa-home">
             <h4 class="p-2">ENCONTRANOS</h4>
