@@ -319,7 +319,7 @@ footer{
     background-color: #128c7e; 
 }
 
-//ESTUDIO JURIDICO
+//ESTUDIO JURIDICO / MEDIACIONES / TASACIONES
 
 .servicios {
     background-color: #f9f9f9;
@@ -368,6 +368,98 @@ footer{
     }
 }
 
+/*INMOBILIARIA*/
+.catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: whitesmoke;
+
+        .card{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin: 20px;
+
+                .face{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    transition: .5s;
+                }
+
+                .front{
+                    transform: perspective(600px) rotateY(0deg);
+                    box-shadow: 0 5px 10px #000;
+
+                        img{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                        h3{
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 45px;
+                            line-height: 45px;
+                            color: #fff;
+                            background: rgba(0, 0, 0, 0.4);
+                            text-align: center;
+                        }
+                }
+
+                .back{
+                    transform: perspective(600px) rotateY(180deg);
+                    background: $color5;
+                    padding: 15px;
+                    color: #f3f3f3;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: center;
+                    box-shadow: 0 5px 10px #000;
+
+                        h3{
+                            font-size: 20px;
+                            margin-top: 20px;
+                            letter-spacing: 2px;
+                            background: rgba(0, 0, 0, 0.6);
+                        }
+
+                        p{
+                            letter-spacing: 1px;
+                        }
+
+                        .link-card{
+                            border-top: solid 1px #f3f3f3;
+                            height: 50px;
+                            line-height: 50px;
+
+                                a{
+                                    color: #f3f3f3;
+                                }
+                        }
+                }
+
+
+        }
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
 
 //FORM
 .formulario{
