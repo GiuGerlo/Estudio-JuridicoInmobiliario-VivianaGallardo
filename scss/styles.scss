@@ -398,11 +398,22 @@ footer{
             transform: perspective(600px) rotateY(0deg);
             box-shadow: 0 5px 10px #000;
 
-            img{
+            .images-container {
+                display: flex;
+                flex-direction: column;
                 width: 100%;
                 height: auto;
-                display: block;
-                object-fit: cover;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
             }
 
             h3{
@@ -437,7 +448,7 @@ footer{
             }
 
             p{
-                font-size: 20px;
+                font-size: 19px;
                 letter-spacing: 1px;
                 color: $color1;
             }

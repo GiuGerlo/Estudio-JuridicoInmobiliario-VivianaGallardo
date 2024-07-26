@@ -330,12 +330,21 @@ footer .invisible {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px #000;
 }
-.catalogo .card .front img {
+.catalogo .card .front .images-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  display: block;
+}
+.catalogo .card .front .images-container img {
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 10px;
+}
+.catalogo .card .front .images-container img:last-child {
+  margin-bottom: 0;
 }
 .catalogo .card .front h3 {
   position: absolute;
@@ -366,7 +375,7 @@ footer .invisible {
   background: rgba(0, 0, 0, 0.6);
 }
 .catalogo .card .back p {
-  font-size: 20px;
+  font-size: 19px;
   letter-spacing: 1px;
   color: #353434;
 }
