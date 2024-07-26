@@ -346,6 +346,7 @@ footer .invisible {
   color: #fff;
   background: rgba(0, 0, 0, 0.4);
   text-align: center;
+  font-weight: bold;
 }
 .catalogo .card .back {
   transform: perspective(600px) rotateY(180deg);
