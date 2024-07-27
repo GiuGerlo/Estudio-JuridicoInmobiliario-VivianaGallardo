@@ -260,6 +260,29 @@ footer .invisible {
   background-color: #128c7e;
 }
 
+.btn-contactame {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #778080;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.btn-contactame:hover {
+  background-color: #5e6666;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+.btn-contactame:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(119, 128, 128, 0.5);
+}
+
 .servicios {
   background-color: #f9f9f9;
   padding: 50px 0;
@@ -425,7 +448,7 @@ footer .invisible {
   margin-bottom: 15px;
 }
 .formulario form .input-group input, .formulario form .input-group textarea {
-  padding: 17 25px !important;
+  padding: 17px 25px !important;
   border-radius: 8px !important;
   margin-bottom: 15px;
   border: 2px solid #F0FAF1;
@@ -446,6 +469,29 @@ footer .invisible {
   background-color: #353434;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
   cursor: pointer;
+  margin-bottom: 10px;
+}
+.formulario form .input-group .btn-whatsapp {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #25D366;
+  border: none;
+  border-radius: 25px !important;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.formulario form .input-group .btn-whatsapp:hover {
+  background-color: #1da851;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+.formulario form .input-group .btn-whatsapp:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(37, 211, 102, 0.5);
 }
 .formulario form h2 {
   font-weight: bold;
